@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<title>Meow Mrrrppp V0.1</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML learning for myself">
+  <meta name="keywords" content="HTML, CSS,">
+  <meta name="author" content="&copy; Nia">
+  <meta name="Code" content="https://github.com/Ichkanneshalt27">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    h1 {font-family:verdana;}
+    h1 {font-size:160%}
+    p {font-family:verdana;}
+    p {style=font-size:10vw;}
+    h1 {font-style: italic;}
+    
+*{
+  box-sizing: border-box;
+}
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: underline;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: lightblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+  background-color: pink;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 300px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.cop {text-align:right;}
+
+</style>
+</head>
+<body>
+
+<body style="background-image:url('https://img.fotocommunity.com/zum-sonnenaufgang-auf-dem-elbdeich-0a151059-0ac3-40fa-918c-68f7e7e44f4e.jpg?height=1080');font-family:verdana;">
+
+<h1 style="color:pink;text-align:center;border:3px solid lightblue;padding:5px;margin:10px";><i>Trans rights are humand rights</i></h1>
+
+<header>
+  <h2></h2>
+</header>
+<section>
+  <nav>
+    <ul>
+    	<li><a href="#">About Me</a></li>
+    	<li><a href="#">What I do</a></li>
+    	<li><a href="#">Meow :3</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>Ichkanneshalt / Nia</h2>
+    <p>Just a 21 Year old Girl learning how to programm things. Mostly know as the weard Person on the Labymod Discord.</p>
+    <p>Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href= "https://smallbasic-publicwebsite.azurewebsites.net/" title="Small Basics website." target="_blank">Small Basics</a></q> + learning HTML / a bit of CSS right now.
+    <p> I love cats thats all. Meow mmmrrpp :3</p>
+  </article>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+<pre>
+
+
+
+
+
+
+
+
+
+</pre>
+<adress>
+Made by Ichkanneshalt / Nia.<br>
+Visit me on:<a href= "https://ebio.gg/@Ichkanneshalt" title="Look at my profile!" target="_blank">https://ebio.gg/@Ichkanneshalt</a><br>
+or ask me something on Discord: <q>Ichkanneshalt</q> <span class="cop"> &copy; Ichkanneshalt / Nia </span> <br>
+</adress>
+<button onclick="myFunction1()">Women UwU</button>
+
+<!-- Meow -->
+
+<script>
+function myFunction1() {
+  alert("I like Women UwU!");
+}
+</script>
+
+</body>
+</html>
+
