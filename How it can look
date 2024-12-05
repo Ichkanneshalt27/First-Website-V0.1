@@ -14,7 +14,7 @@
     h1 {font-size:160%}
     p {font-family:verdana;}
     p {style=font-size:10vw;}
-    h1 {font-style: italic;}
+     h1 {font-style: italic;} 
     
 *{
   box-sizing: border-box;
@@ -101,15 +101,34 @@ footer {
     height: auto;
   }
 }
+
 .cop {text-align:right;}
 
+.button {
+	color: black;
+    font-style: bold;
+    font-size: 16px;
+    border-radius:4px;
+    cursor: pointer;
+    padding:4px 16px;
+    margin:4px;
+    font-weight: bold;
+    border:none;
+    transition-duration:0.4s;
+}
+
+.button1 {Background-color:Pink;}
+.button1:hover {color:blue;}
+.button2 {Background-color:Transparent;}
+.button:hover {color:blue; background-color:darkgray;}
+	
 </style>
 </head>
 <body>
 
 <body style="background-image:url('https://img.fotocommunity.com/zum-sonnenaufgang-auf-dem-elbdeich-0a151059-0ac3-40fa-918c-68f7e7e44f4e.jpg?height=1080');font-family:verdana;">
 
-<h1 style="color:pink;text-align:center;border:3px solid lightblue;padding:5px;margin:10px";><i>Trans rights are humand rights</i></h1>
+<h1 style="color:pink;text-align:center;border:3px solid lightblue;padding:5px;margin:10px";>Trans rights are humand rights &#x1F3F3;&#xFE0F;&#x200D;&#x26A7;&#xFE0F;</h1>
 
 <header>
   <h2></h2>
@@ -117,20 +136,21 @@ footer {
 <section>
   <nav>
     <ul>
-    	<li><a href="#">About Me</a></li>
-    	<li><a href="#">What I do</a></li>
-    	<li><a href="#">Meow :3</a></li>
+    <div>
+    <button class="button button1" onclick="myFunction2()"> About me</button><br>
+    <button class="button button1" onclick="myFunction3()"> What I do</button><br>
+    <button class="button button1" onclick="myFunction4()"> Meow :3</button><br>
+    </div>
     </ul>
   </nav>
-  
   <article>
-    <h2>Ichkanneshalt / Nia</h2>
-    <p>Just a 21 Year old Girl learning how to programm things. Mostly know as the weard Person on the Labymod Discord.</p>
-    <p>Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href= "https://smallbasic-publicwebsite.azurewebsites.net/" title="Small Basics website." target="_blank">Small Basics</a></q> + learning HTML / a bit of CSS right now.
-    <p> I love cats thats all. Meow mmmrrpp :3</p>
+    <h2 id="head">Ichkanneshalt / Nia - About Me</h2>
+    <p id="first">Just a 21 Year old Girl learning how to programm things. Mostly know as the weard Person on the Labymod Discord.</p>
+    <p id="second">Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href= "https://smallbasic-publicwebsite.azurewebsites.net/" title="Small Basics website." target="_blank">Small Basics</a></q> + learning HTML / a bit of CSS / Javascript right now.
+    <p id="third"> I really love cats and thats all &#128150. Meow mmmrrpp :3</p>
+    <p id="vier"> Don't look at the code to much ok? c-c </p>
   </article>
 </section>
-
 <footer>
   <p></p>
 </footer>
@@ -143,23 +163,68 @@ footer {
 
 
 
-
 </pre>
 <adress>
 Made by Ichkanneshalt / Nia.<br>
 Visit me on:<a href= "https://ebio.gg/@Ichkanneshalt" title="Look at my profile!" target="_blank">https://ebio.gg/@Ichkanneshalt</a><br>
-or ask me something on Discord: <q>Ichkanneshalt</q> <span class="cop"> &copy; Ichkanneshalt / Nia </span> <br>
+or on: <a href= "https://laby.net/@Ichkanneshalt" title="Look at my profile!" target="_blank">https://laby.net/@Ichkanneshalt</a><br>
+or ask me something on Discord: <q>Ichkanneshalt</q><br>
+&copy; Ichkanneshalt / Nia <br>
 </adress>
-<button onclick="myFunction1()">Women UwU</button>
+<button class="button" onclick="myFunction1()">Women UwU</button>
 
 <!-- Meow -->
 
+<!--<script>
+
+//option[1].select = true;
+
+//menu.onchange = function(){
+//let optionValue = this.Value;
+
+//let index = this.selectindex;
+//optiontext = this.option[index]-innerText;
+//console.log(optionValue);
+
+
+</script> -->
+
 <script>
 function myFunction1() {
-  alert("I like Women UwU!");
+	document.getElementById("vier").innerHTML = "Hehehehehehe:3!";
+  	alert("I like Women UwU!");
+}
+</script>
+
+<script>
+function myFunction2() {
+	document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - About Me"
+	document.getElementById("first").innerHTML = "Just a 21 Year old Girl learning how to programm things. 		Mostly know as the weard Person on the Labymod Discord.";
+    document.getElementById("second").innerHTML = "I did some things in the past like speedruning or made a game in Roblox. But these things particular the Roblox Game are long time ago. (I acutally still have the code for the Game but isn't online anymore";
+    document.getElementById("third").innerHTML = "Also I am Trans and a Lesbian. Guys are just mmhhh to boring? not that much interresint? Idk x3!";
+    document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
+}
+</script>
+
+<script>
+function myFunction3() {
+		document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - What I do"
+		document.getElementById("first").innerHTML = "Geting my life together and geting in to the Work life. Also geting the support that I need to get my life more in balance.";
+    	document.getElementById("second").innerHTML = "Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned Small Basics + learning HTML / a bit of CSS / Javascript right now.";
+    	document.getElementById("third").innerHTML = "";
+        document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
+}
+</script>
+
+<script>
+function myFunction4() {
+		document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - Meow :3"
+		document.getElementById("first").innerHTML = "I really just love cats they are just to cute and sweet but also can be really mean. But damn they are cute qwq.";
+    	document.getElementById("second").innerHTML = "I really wish I had Cat here right know";
+    	document.getElementById("third").innerHTML = "Meow mmmmrrrpppp :3";
+        document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
 }
 </script>
 
 </body>
 </html>
-
