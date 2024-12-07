@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
 <title>Meow Mrrrppp V0.1</title>
   <meta charset="UTF-8">
   <meta name="description" content="HTML learning for myself">
@@ -200,7 +199,7 @@ function myFunction1() {
 function myFunction2() {
 	document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - About Me"
 	document.getElementById("first").innerHTML = "Just a 21 Year old Girl learning how to programm things. 		Mostly know as the weard Person on the Labymod Discord.";
-    document.getElementById("second").innerHTML = "I did some things in the past like speedruning or made a game in Roblox. But these things particular the Roblox Game are long time ago. (I acutally still have the code for the Game but isn't online anymore";
+    document.getElementById("second").innerHTML = "I did some things in the past like speedruning or made a game in Roblox. They are a bit loonger in the past particular the Roblox Game. (I acutally still have the source code for the Game but it isn't online anymore).";
     document.getElementById("third").innerHTML = "Also I am Trans and a Lesbian. Guys are just mmhhh to boring? not that much interresint? Idk x3!";
     document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
 }
