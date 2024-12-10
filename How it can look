@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Meow Mrrrppp V0.2</title>
+<title>Meow Mrrrppp V0.26</title>
   <meta charset="UTF-8">
   <meta name="description" content="HTML learning for myself">
   <meta name="keywords" content="HTML, CSS,">
@@ -15,11 +15,8 @@
     p {font-family:verdana;style=font-size:10vw;}
     adress {font-weight: bold;}
 
-*{font-family:Helvetica, sans-serif}
+*{font-family:Helvetica, sans-serif;box-sizing: border-box;}
     
-*{
-  box-sizing: border-box;
-}
 a:link {
   color: blue;
   background-color: transparent;
@@ -75,10 +72,11 @@ nav ul {
 
 article {
   float: left;
-  padding: 20px;
+  padding: 10px;
   width: 70%;
   background-color: white;
   height: 300px;
+  overflow: auto;
 }
 
 /* Clear floats after the columns */
@@ -115,8 +113,18 @@ footer {
     margin:4px;
     font-weight: bold;
     border:none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
     transition-duration:0.4s;
 }
+
+/*.box {
+  position: absolute;
+  z-index: -1; 
+  background: gray;
+  opacity: 0.9;
+  left: 0px;
+}*/
 
 adress{position:absolute; bottom:0px;}
 h2 {border-bottom-style: solid; text-align:center;}
@@ -144,7 +152,7 @@ h2 {border-bottom-style: solid; text-align:center;}
     <button class="button button1" onclick="myFunction2()"> About me</button><br>
     <button class="button button1" onclick="myFunction3()"> What I do</button><br>
     <button class="button button1" onclick="myFunction4()"> Meow :3</button><br>
-    <button class="button button1" onclick="Video()"> Video :3</button><br>
+    <button class="button button1" onclick="Video()"> Video Test</button><br>
     </div>
     </ul>
   </nav>
@@ -154,14 +162,13 @@ h2 {border-bottom-style: solid; text-align:center;}
     <p id="second">Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href= "https://smallbasic-publicwebsite.azurewebsites.net/" title="Small Basics website." target="_blank">Small Basics</a></q> + learning HTML / a bit of CSS / Javascript right now.
     <p id="third"> I really love cats and thats all &#128150. Meow mmmrrpp :3</p>
     <p id="vier"> Don't look at the code to much ok? c-c </p>
-    <iframe id=Meow width="0"; height="0"; style="border:none";></iframe>
   </article>
 </section>
 <footer>
 	<p></p>
 </footer>
 
-<adress>
+<adress class="box">
 Made by Ichkanneshalt / Nia.<br>
 Visit me on:<a href= "https://ebio.gg/@Ichkanneshalt" title="Look at my profile!" target="_blank">https://ebio.gg/@Ichkanneshalt</a><br>
 or on: <a href= "https://laby.net/@Ichkanneshalt" title="Look at my profile!" target="_blank">https://laby.net/@Ichkanneshalt</a><br>
@@ -181,8 +188,8 @@ function myFunction1() {
 function myFunction2() {
 	document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - About Me"
 	document.getElementById("first").innerHTML = "Just a 21 year old Girl learning how to programm things. 		Mostly know as the weard Person on the Labymod Discord.";
-    document.getElementById("second").innerHTML = "I did some things in the past like speedruning or made a game in Roblox. They are a bit loonger in the past particular the Roblox Game. (I acutally still have the source code for the Game but it isn't online anymore).";
-    document.getElementById("third").innerHTML = "Also I am Trans and a Lesbian. Guys are just mmhhh to boring? not that much interresint? Idk x3!";
+    document.getElementById("second").innerHTML = "I did some things in the past like speedruning or made a game in Roblox. They are a bit loonger in the past particular the Roblox Game. (I acutally still have the source code for the Game but it isn't online anymore).<br><br> I would call myself a gaming person bc I play many things and also often enough to much. Even though now with work and other stuff it got overall less.";
+    document.getElementById("third").innerHTML = "Also I am Trans &#x1F3F3;&#xFE0F;&#x200D;&#x26A7;&#xFE0F; and a Lesbian. Guys are just mmhhh to boring? not that much interresint? Idk x3!";
     document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
 }
 </script>
@@ -190,9 +197,9 @@ function myFunction2() {
 <script>
 function myFunction3() {
 		document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - What I do"
-		document.getElementById("first").innerHTML = "Geting my life together and geting in to the Work life. Also geting the support that I need to get my life more in balance.";
-    	document.getElementById("second").innerHTML = "Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href='https://smallbasic-publicwebsite.azurewebsites.net' title=Small Basics website. target=_blank>Small Basics</a></q> + learning HTML / a bit of CSS / Javascript right now.";
-    	document.getElementById("third").innerHTML = "";
+		document.getElementById("first").innerHTML = "Geting my life together and geting in to the work life. Also geting the support that I need to get my life more in balance.";
+    	document.getElementById("second").innerHTML = "Right now learning how code but I was also in an office als going into electric and stuff.";
+    	document.getElementById("third").innerHTML = "Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href='https://smallbasic-publicwebsite.azurewebsites.net' title=Small Basics website. target=_blank>Small Basics</a></q> + learning HTML / a bit of CSS / Javascript right now.";
         document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
 }
 </script>
@@ -201,7 +208,7 @@ function myFunction3() {
 function myFunction4() {
 		document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - Meow :3"
 		document.getElementById("first").innerHTML = "I really just love cats they are just to cute and sweet but also can be really mean. But damn they are cute qwq.";
-    	document.getElementById("second").innerHTML = "I really wish I had Cat here right know";
+    	document.getElementById("second").innerHTML = "I really wish I had a Cat here right know";
     	document.getElementById("third").innerHTML = "Meow mmmmrrrpppp :3";
         document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
 }
@@ -219,12 +226,11 @@ function myFunction5() {
 
 <script>
 function Video() {
-		document.getElementById("head").innerHTML = "just a random video from Youtube"
-		document.getElementById("first").innerHTML = ";
-    	document.getElementById("second").innerHTML = "";
-    	document.getElementById("third").innerHTML = "";
-        document.getElementById("vier").innerHTML = "";
-        document.getElementById("Meow").innerHTML = "<iframe width="420" height="345" src='https://www.youtube.com/embed/tgbNymZ7vqY'> gg </iframe>";
+			document.getElementById("head").innerHTML = "When it work then there will be a Video"
+			document.getElementById("first").innerHTML = "It doesn't work btw";
+    		document.getElementById("second").innerHTML = "";
+    		document.getElementById("third").innerHTML = "";
+        	document.getElementById("vier").innerHTML = "";
 }
 </script>
 
