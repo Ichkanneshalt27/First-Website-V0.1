@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Meow Mrrrppp V0.1</title>
+<title>Meow Mrrrppp V0.2</title>
   <meta charset="UTF-8">
   <meta name="description" content="HTML learning for myself">
   <meta name="keywords" content="HTML, CSS,">
@@ -9,11 +9,13 @@
   <meta name="Code" content="https://github.com/Ichkanneshalt27">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-    h1 {font-family:verdana;}
-    h1 {font-size:160%}
-    p {font-family:verdana;}
-    p {style=font-size:10vw;}
-     h1 {font-style: italic;} 
+    h1 {font-family:verdana;font-size:180%;font-style: italic;font-weight: bold;}
+    h2 {font-size:130%;font-weight: bold;}
+    h3 {text-decoration: underline;}
+    p {font-family:verdana;style=font-size:10vw;}
+    adress {font-weight: bold;}
+
+*{font-family:Helvetica, sans-serif}
     
 *{
   box-sizing: border-box;
@@ -116,6 +118,9 @@ footer {
     transition-duration:0.4s;
 }
 
+adress{position:absolute; bottom:0px;}
+h2 {border-bottom-style: solid; text-align:center;}
+
 .button1 {Background-color:Pink;}
 .button1:hover {color:blue;}
 .button2 {Background-color:Transparent;}
@@ -130,63 +135,40 @@ footer {
 <h1 style="color:pink;text-align:center;border:3px solid lightblue;padding:5px;margin:10px";>Trans rights are humand rights &#x1F3F3;&#xFE0F;&#x200D;&#x26A7;&#xFE0F;</h1>
 
 <header>
-  <h2></h2>
 </header>
 <section>
   <nav>
     <ul>
     <div>
+    <button class="button button1" onclick="myFunction5()"> Quick info</button><br>
     <button class="button button1" onclick="myFunction2()"> About me</button><br>
     <button class="button button1" onclick="myFunction3()"> What I do</button><br>
     <button class="button button1" onclick="myFunction4()"> Meow :3</button><br>
+    <button class="button button1" onclick="Video()"> Video :3</button><br>
     </div>
     </ul>
   </nav>
   <article>
-    <h2 id="head">Ichkanneshalt / Nia - About Me</h2>
-    <p id="first">Just a 21 Year old Girl learning how to programm things. Mostly know as the weard Person on the Labymod Discord.</p>
+    <h2 id="head"; text-decoration:"underline";>Ichkanneshalt / Nia - Quick info</h2>
+    <p id="first" >Just a 21 Year old Girl learning how to programm things. Mostly know as the weard Person on the Labymod Discord.</p>
     <p id="second">Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href= "https://smallbasic-publicwebsite.azurewebsites.net/" title="Small Basics website." target="_blank">Small Basics</a></q> + learning HTML / a bit of CSS / Javascript right now.
     <p id="third"> I really love cats and thats all &#128150. Meow mmmrrpp :3</p>
     <p id="vier"> Don't look at the code to much ok? c-c </p>
+    <iframe id=Meow width="0"; height="0"; style="border:none";></iframe>
   </article>
 </section>
 <footer>
-  <p></p>
+	<p></p>
 </footer>
-<pre>
 
-
-
-
-
-
-
-
-</pre>
 <adress>
 Made by Ichkanneshalt / Nia.<br>
 Visit me on:<a href= "https://ebio.gg/@Ichkanneshalt" title="Look at my profile!" target="_blank">https://ebio.gg/@Ichkanneshalt</a><br>
 or on: <a href= "https://laby.net/@Ichkanneshalt" title="Look at my profile!" target="_blank">https://laby.net/@Ichkanneshalt</a><br>
 or ask me something on Discord: <q>Ichkanneshalt</q><br>
 &copy; Ichkanneshalt / Nia <br>
+<button class="button" onclick="myFunction1()">Women UwU</button><br>
 </adress>
-<button class="button" onclick="myFunction1()">Women UwU</button>
-
-<!-- Meow -->
-
-<!--<script>
-
-//option[1].select = true;
-
-//menu.onchange = function(){
-//let optionValue = this.Value;
-
-//let index = this.selectindex;
-//optiontext = this.option[index]-innerText;
-//console.log(optionValue);
-
-
-</script> -->
 
 <script>
 function myFunction1() {
@@ -198,7 +180,7 @@ function myFunction1() {
 <script>
 function myFunction2() {
 	document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - About Me"
-	document.getElementById("first").innerHTML = "Just a 21 Year old Girl learning how to programm things. 		Mostly know as the weard Person on the Labymod Discord.";
+	document.getElementById("first").innerHTML = "Just a 21 year old Girl learning how to programm things. 		Mostly know as the weard Person on the Labymod Discord.";
     document.getElementById("second").innerHTML = "I did some things in the past like speedruning or made a game in Roblox. They are a bit loonger in the past particular the Roblox Game. (I acutally still have the source code for the Game but it isn't online anymore).";
     document.getElementById("third").innerHTML = "Also I am Trans and a Lesbian. Guys are just mmhhh to boring? not that much interresint? Idk x3!";
     document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
@@ -209,7 +191,7 @@ function myFunction2() {
 function myFunction3() {
 		document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - What I do"
 		document.getElementById("first").innerHTML = "Geting my life together and geting in to the Work life. Also geting the support that I need to get my life more in balance.";
-    	document.getElementById("second").innerHTML = "Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned Small Basics + learning HTML / a bit of CSS / Javascript right now.";
+    	document.getElementById("second").innerHTML = "Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href='https://smallbasic-publicwebsite.azurewebsites.net' title=Small Basics website. target=_blank>Small Basics</a></q> + learning HTML / a bit of CSS / Javascript right now.";
     	document.getElementById("third").innerHTML = "";
         document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
 }
@@ -222,6 +204,27 @@ function myFunction4() {
     	document.getElementById("second").innerHTML = "I really wish I had Cat here right know";
     	document.getElementById("third").innerHTML = "Meow mmmmrrrpppp :3";
         document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
+}
+</script>
+
+<script>
+function myFunction5() {
+		document.getElementById("head").innerHTML = "Ichkanneshalt / Nia - Quick info"
+		document.getElementById("first").innerHTML = "Just a 21 Year old Girl learning how to programm things. Mostly know as the weard Person on the Labymod Discord.";
+    	document.getElementById("second").innerHTML = "Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href='https://smallbasic-publicwebsite.azurewebsites.net' title=Small Basics website. target=_blank>Small Basics</q></a> + learning HTML / a bit of CSS / Javascript right now.";
+    	document.getElementById("third").innerHTML = "I really love cats and thats all &#128150. Meow mmmrrpp :3";
+        document.getElementById("vier").innerHTML = "Don't look at the code to much ok? c-c";
+}
+</script>
+
+<script>
+function Video() {
+		document.getElementById("head").innerHTML = "just a random video from Youtube"
+		document.getElementById("first").innerHTML = ";
+    	document.getElementById("second").innerHTML = "";
+    	document.getElementById("third").innerHTML = "";
+        document.getElementById("vier").innerHTML = "";
+        document.getElementById("Meow").innerHTML = "<iframe width="420" height="345" src='https://www.youtube.com/embed/tgbNymZ7vqY'> gg </iframe>";
 }
 </script>
 
