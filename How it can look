@@ -136,6 +136,9 @@ h2 {border-bottom-style: solid; text-align:center;}
 	
 </style>
 </head>
+
+<!--------------------------------------- --------------------------------->
+
 <body>
 
 <body style="background-image:url('https://img.fotocommunity.com/zum-sonnenaufgang-auf-dem-elbdeich-0a151059-0ac3-40fa-918c-68f7e7e44f4e.jpg?height=1080');font-family:verdana;">
@@ -162,6 +165,8 @@ h2 {border-bottom-style: solid; text-align:center;}
     <p id="second">Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href= "https://smallbasic-publicwebsite.azurewebsites.net/" title="Small Basics website." target="_blank">Small Basics</a></q> + learning HTML / a bit of CSS / Javascript right now.
     <p id="third"> I really love cats and thats all &#128150. Meow mmmrrpp :3</p>
     <p id="vier"> Don't look at the code to much ok? c-c </p>
+    <p id="Video2" style="display:none">TESTEN</p>
+    <iframe id="Video" style="display:none" width="420" height="345"  src="https://www.youtube.com/watch?v=btsh1qNOIEA"></iframe>
   </article>
 </section>
 <footer>
@@ -176,6 +181,8 @@ or ask me something on Discord: <q>Ichkanneshalt</q><br>
 &copy; Ichkanneshalt / Nia <br>
 <button class="button" onclick="myFunction1()">Women UwU</button><br>
 </adress>
+
+<!--------------------------------------- --------------------------------->
 
 <script>
 function myFunction1() {
@@ -228,9 +235,10 @@ function myFunction5() {
 function Video() {
 			document.getElementById("head").innerHTML = "When it work then there will be a Video"
 			document.getElementById("first").innerHTML = "It doesn't work btw";
-    		document.getElementById("second").innerHTML = "";
+    		document.getElementById("second").innerHTML = "fck it";
     		document.getElementById("third").innerHTML = "";
         	document.getElementById("vier").innerHTML = "";
+            document.getElementById('video').style.display='block'
 }
 </script>
 
