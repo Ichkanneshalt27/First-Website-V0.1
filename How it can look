@@ -126,10 +126,10 @@ footer {
   left: 0px;
 }*/
 
-adress{position:absolute; bottom:0px;}
+adress{position:absolute; bottom:0%;}
 h2 {border-bottom-style: solid; text-align:center;}
 
-.button1 {Background-color:Pink;}
+.button1 {Background-color:Transparent;}
 .button1:hover {color:blue;}
 .button2 {Background-color:Transparent;}
 .button:hover {color:blue; background-color:darkgray;}
@@ -236,7 +236,7 @@ function Video() {
 			document.getElementById("head").innerHTML = "When it work then there will be a Video"
 			document.getElementById("first").innerHTML = "It doesn't work btw";
     		document.getElementById("second").innerHTML = "fck it";
-    		document.getElementById("third").innerHTML = "";
+    		document.getElementById("third").innerHTML = "WHEN SOMEON SEES THIS I COULD USE SOME HELP";
         	document.getElementById("vier").innerHTML = "";
             document.getElementById('video').style.display='block'
 }
