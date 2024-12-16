@@ -37,11 +37,9 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
-body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+html {
+  background: url(https://img.fotocommunity.com/zum-sonnenaufgang-auf-dem-elbdeich-0a151059-0ac3-40fa-918c-68f7e7e44f4e.jpg?height=1080) no-repeat center fixed; 
   background-size: cover;
-  background-size: 100% 100%;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -132,7 +130,7 @@ h2 {border-bottom-style: solid; text-align:center;}
 .button1 {Background-color:Transparent;}
 .button1:hover {color:blue;}
 .button2 {Background-color:Transparent;}
-.button:hover {color:blue; background-color:darkgray;}
+.button:hover {color:blue; background-color:darkgray; box-shadow: 0px 8px 16px 0px rgba(0,0.1,0.1,0.1);;}
 	
 </style>
 </head>
@@ -140,8 +138,6 @@ h2 {border-bottom-style: solid; text-align:center;}
 <!--------------------------------------- --------------------------------->
 
 <body>
-
-<body style="background-image:url('https://img.fotocommunity.com/zum-sonnenaufgang-auf-dem-elbdeich-0a151059-0ac3-40fa-918c-68f7e7e44f4e.jpg?height=1080');font-family:verdana;">
 
 <h1 style="color:pink;text-align:center;border:3px solid lightblue;padding:5px;margin:10px";>Trans rights are humand rights &#x1F3F3;&#xFE0F;&#x200D;&#x26A7;&#xFE0F;</h1>
 
