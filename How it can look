@@ -17,6 +17,32 @@
 
 *{font-family:Helvetica, sans-serif;box-sizing: border-box;}
     
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font-family:Helvetica, sans-serif;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: darkgray;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 0;
+  
+  /*tooltip position*/
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 a:link {
   color: blue;
   background-color: transparent;
@@ -151,7 +177,7 @@ h2 {border-bottom-style: solid; text-align:center;}
     <button class="button button1" onclick="myFunction2()"> About me</button><br>
     <button class="button button1" onclick="myFunction3()"> What I do</button><br>
     <button class="button button1" onclick="myFunction4()"> Meow :3</button><br>
-    <button class="button button1" onclick="Video()"> Video Test</button><br>
+    <button class="button button1" onclick="Video()"> surprise</button><br>
     </div>
     </ul>
   </nav>
@@ -161,8 +187,7 @@ h2 {border-bottom-style: solid; text-align:center;}
     <p id="second">Helping on the Labymod Discord from time to time. Also geting into worklife + learning how to programm. For know I learned <q><a href= "https://smallbasic-publicwebsite.azurewebsites.net/" title="Small Basics website." target="_blank">Small Basics</a></q> + learning HTML / a bit of CSS / Javascript right now.
     <p id="third"> I really love cats and thats all &#128150. Meow mmmrrpp :3</p>
     <p id="vier"> Don't look at the code to much ok? c-c </p>
-    <p id="Video2" style="display:none">TESTEN</p>
-    <iframe id="Video" style="display:none" width="420" height="345"  src="https://www.youtube.com/watch?v=btsh1qNOIEA"></iframe>
+    <img id="Video" style="display:none" width="420" height="345" src="https://preview.redd.it/illr9fj0r07e1.png?auto=webp&s=dc3d066b1bdec604a5455c6b1bc9baae4ec4cbe3"></img>
   </article>
 </section>
 <footer>
@@ -229,10 +254,10 @@ function myFunction5() {
 
 <script>
 function Video() {
-			document.getElementById("head").innerHTML = "When it work then there will be a Video"
+			document.getElementById("head").innerHTML = "When it work then there will be something"
 			document.getElementById("first").innerHTML = "It doesn't work btw";
-    		document.getElementById("second").innerHTML = "fck it";
-    		document.getElementById("third").innerHTML = "WHEN SOMEON SEES THIS I COULD USE SOME HELP";
+    		document.getElementById("second").innerHTML = "";
+    		document.getElementById("third").innerHTML = "";
         	document.getElementById("vier").innerHTML = "";
             document.getElementById('video').style.display='block'
 }
