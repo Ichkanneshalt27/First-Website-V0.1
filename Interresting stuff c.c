@@ -90,12 +90,12 @@
 <p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
 <p>Don't worry if you do not understand the code right away. When you are done with CSS, go to our JavaScript Tutorial to learn more.</p>
 
-<img id="myImg" src="img_lights.jpg" alt="Northern Lights, Norway" width="300" height="200">
+<img id="myImg" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="Northern Lights, Norway" width="300" height="200">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
-  <img class="https://www.vets4pets.com/siteassets/species/cat/cat-close-up-of-side-profile.jpg" id="img01">
+  <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
 
@@ -124,5 +124,3 @@ span.onclick = function() {
 
 </body>
 </html>
-
-
