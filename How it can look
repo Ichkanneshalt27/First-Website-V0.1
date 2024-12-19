@@ -8,6 +8,7 @@
   <meta name="author" content="&copy; Nia">
   <meta name="Code" content="https://github.com/Ichkanneshalt27">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </title>
 <style>
     h1 {font-family:verdana;font-size:180%;font-style: italic;font-weight: bold;}
     h2 {font-size:130%;font-weight: bold;}
@@ -165,7 +166,7 @@ h2 {border-bottom-style: solid; text-align:center;}
 
 <body>
 
-<h1 style="color:pink;text-align:center;border:3px solid lightblue;padding:5px;margin:10px";>Trans rights are human rights &#x1F3F3;&#xFE0F;&#x200D;&#x26A7;&#xFE0F;</h1>
+<h1 style="color:pink;text-align:center;border:3px solid lightblue;padding:5px;margin:10px";>Trans rights are humand rights &#x1F3F3;&#xFE0F;&#x200D;&#x26A7;&#xFE0F;</h1>
 
 <header>
 </header>
@@ -256,7 +257,7 @@ function myFunction5() {
 function Video() {
 			document.getElementById("head").innerHTML = "When it work then there will be something"
 			document.getElementById("first").innerHTML = "It doesn't work btw";
-    		document.getElementById("second").innerHTML = "";
+    		document.getElementById("second").innerHTML = "<a href='https://preview.redd.it/illr9fj0r07e1.png?auto=webp&s=dc3d066b1bdec604a5455c6b1bc9baae4ec4cbe3' title=Small Basics website. target=_blank>surprise</a>";
     		document.getElementById("third").innerHTML = "";
         	document.getElementById("vier").innerHTML = "";
             document.getElementById('video').style.display='block'
